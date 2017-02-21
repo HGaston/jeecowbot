@@ -19,4 +19,10 @@ public class PlantsList implements PlantsListRemote, PlantsListLocal {
 		
 	}
 
+	@Override
+	public void remove(String name) {
+		plants.remove(name);
+		
+	}
+
 }
