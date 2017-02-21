@@ -92,5 +92,6 @@
     <module>jeecowbot-ejb</module>
     <module>jeecowbot-web</module>
     <module>jeecowbot-ear</module>
+    
   </modules>
 </project>

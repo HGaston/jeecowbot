@@ -8,7 +8,7 @@ import javax.ejb.Singleton;
  * Session Bean implementation class PlantsList
  */
 @Singleton
-public class PlantsList implements PlantsListRemote, PlantsListLocal {
+public class PlantsList implements PlantsListRemote {
 
 	static HashMap<String, Integer> plants=new HashMap<>();
 
@@ -16,6 +16,14 @@ public class PlantsList implements PlantsListRemote, PlantsListLocal {
 	public void addPlant(String name, Integer age) {
 		
 		plants.put(name, age);
+		
+	}
+
+	@Override
+	public void remove(String name) {
+
+		plants.remove(name);
+
 		
 	}
 
