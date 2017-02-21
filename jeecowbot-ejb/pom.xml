@@ -9,15 +9,12 @@
 	<artifactId>jeecowbot-ejb</artifactId>
 	<packaging>ejb</packaging>
 
-
-
 	<dependencies>
 		<dependency>
 			<groupId>javax</groupId>
 			<artifactId>javaee-api</artifactId>
 		</dependency>
 	</dependencies>
-
 	<build>
 		<finalName>${project.artifactId}</finalName>
 		<plugins>
@@ -28,7 +25,6 @@
 				<configuration>
 				<skip>true</skip>
 					<ejbVersion>3.2</ejbVersion>
-					
 				</configuration>
 			</plugin>
 			<plugin>
@@ -71,5 +67,4 @@
       <url>http://bitbox.tn:8081/nexus/content/repositories/snapshots</url>
    </snapshotRepository>
 </distributionManagement>
-
 </project>
