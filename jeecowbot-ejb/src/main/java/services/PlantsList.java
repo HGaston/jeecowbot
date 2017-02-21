@@ -1,5 +1,7 @@
 package services;
 
+import java.util.HashMap;
+
 import javax.ejb.Singleton;
 
 /**
@@ -8,11 +10,13 @@ import javax.ejb.Singleton;
 @Singleton
 public class PlantsList implements PlantsListRemote, PlantsListLocal {
 
-    /**
-     * Default constructor. 
-     */
-    public PlantsList() {
-        // TODO Auto-generated constructor stub
-    }
+	static HashMap<String, Integer> plants=new HashMap<>();
+
+	@Override
+	public void addPlant(String name, Integer age) {
+		
+		plants.put(name, age);
+		
+	}
 
 }
