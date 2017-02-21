@@ -6,5 +6,6 @@ import javax.ejb.Remote;
 public interface PlantsListRemote {
 
 	void addPlant(String name,Integer age );
+	void remove(String name);
 	
 }
